@@ -13,5 +13,10 @@ namespace BootstrapJqueryValidate.Controllers
         {
             return View();
         }
+
+        public ActionResult JSPage()
+        {
+            return View();
+        }
     }
 }
