@@ -1,5 +1,5 @@
-﻿<button class="btn btn-primary btn-lg" data-whatever="Ray" data-toggle="modal" data-target="#myModal">Open Modal框</button>
-<button id="openModal" class="btn btn-primary btn-lg" data-whatever="Bernice">Click Open modal</button>
+﻿<button class="btn btn-primary btn-lg" data-whatever1="Ray" data-toggle="modal" data-target="#myModal">Open Modal框</button>
+<button id="openModal" class="btn btn-primary btn-lg" data-whatever1="Bernice">Click Open modal</button>
 <button id="toggleModal" class="btn btn-primary btn-lg">toggle modal</button>
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -9,7 +9,8 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="myModalLabel">Modal標题</h4>
             </div>
-            <div class="modal-body">Body內容
+            <div class="modal-body">
+                Body內容
                 <input type="text" class="form-control" id="recipient-name">
             </div>
             <div class="modal-footer">
@@ -27,7 +28,7 @@
             $(function () {
                 $('#myModal').on('shown.bs.modal', function (event) {
                     var button = $(event.relatedTarget) // 触发事件的按钮
-                    var recipient = button.data('whatever') // 解析出data-whatever内容
+                    var recipient = button.data('whatever1') // 解析出data-whatever内容
                     var modal = $(this)
                     modal.find('.modal-title').text('Message To ' + recipient)
                     modal.find('.modal-body input').val(recipient)
@@ -45,9 +46,9 @@
                     $('#myModal').modal({
                         keyboard: false,
                         backdrop: false
-                    });
+                    }, 'show');
 
-                    $('#myModal').modal('show')
+                    //$('#myModal').modal('show')
                 });
 
             })
