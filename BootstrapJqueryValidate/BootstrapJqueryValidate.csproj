@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -159,19 +161,43 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NoteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Demo.cs">
+      <DependentUpon>DemoDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DemoDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DemoDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DemoDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModels\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ViewModels\DemoViewModels.cs" />
+    <Compile Include="Models\ViewModels\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Demo.mdf" />
+    <Content Include="App_Data\Demo_log.ldf">
+      <DependentUpon>Demo.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -188,7 +214,24 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <EntityDeploy Include="Models\DemoDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DemoDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DemoDB.edmx.diagram">
+      <DependentUpon>DemoDB.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Models\DemoDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DemoDB.edmx</DependentUpon>
+      <LastGenOutput>DemoDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DemoDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DemoDB.edmx</DependentUpon>
+      <LastGenOutput>DemoDB.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -205,7 +248,9 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Note\Index.cshtml" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -244,13 +289,17 @@
     <Content Include="Views\Note\BIndex.cshtml" />
     <Content Include="Views\Note\Contact.cshtml" />
     <Content Include="Views\Note\CIndex.cshtml" />
+    <Content Include="Views\Demo\Index.cshtml" />
+    <Content Include="Views\Demo\AddExplanation.cshtml" />
+    <Content Include="Views\Demo\GetList.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
