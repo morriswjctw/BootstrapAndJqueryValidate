@@ -14,7 +14,22 @@ namespace BootstrapJqueryValidate.Controllers
             return View();
         }
 
+        public ActionResult CIndex()
+        {
+            return View();
+        }
+
         public ActionResult JSPage()
+        {
+            return View();
+        }
+
+        public ActionResult BIndex()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
         {
             return View();
         }

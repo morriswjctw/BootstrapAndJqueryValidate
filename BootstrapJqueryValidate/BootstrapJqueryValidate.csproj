@@ -241,6 +241,9 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Note\JSPage.cshtml" />
+    <Content Include="Views\Note\BIndex.cshtml" />
+    <Content Include="Views\Note\Contact.cshtml" />
+    <Content Include="Views\Note\CIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

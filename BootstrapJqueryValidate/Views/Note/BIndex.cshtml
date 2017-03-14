@@ -1,0 +1,574 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="alert alert-success" role="alert">
+    <strong>標籤<!--Well done!--></strong>提供200種標籤可使用<!--You successfully read this important alert message.-->
+</div>
+<!--標籤-->
+<button type="button" class="btn btn-default" aria-label="Left Align">
+    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+</button>
+<button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+</button>
+<button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> Star
+</button>
+<button type="button" class="btn btn-default btn-sm">
+    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> Star
+</button>
+
+<div class="alert alert-success" role="alert">
+    <strong>下拉選單<!--Well done!--></strong>正常下拉選單<!--You successfully read this important alert message.-->
+</div>
+<!--正常下拉選單-->
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+        Dropdown
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    </ul>
+</div>
+<div class="alert alert-success" role="alert">
+    <strong>下拉選單<!--Well done!--></strong>加入抬頭、分隔線、禁用<!--You successfully read this important alert message.-->
+</div>
+<!--下拉選單加入抬頭、分隔線、禁用-->
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+        Dropdown
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation" class="dropdown-header">Dropdown header</li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+    </ul>
+</div>
+
+<div class="alert alert-success" role="alert">
+    <strong>按鈕群組<!--Well done!--></strong>正常按鈕群組<!--You successfully read this important alert message.-->
+</div>
+<!--正常按鈕群組-->
+<div class="btn-group" role="group" aria-label="...">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+
+</div>
+<div class="alert alert-success" role="alert">
+    <strong>按鈕群組<!--Well done!--></strong>水平分布按鈕群組<!--You successfully read this important alert message.-->
+</div>
+<!--水平分布按鈕群組-->
+<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+    <a href="#" class="btn btn-default" role="button">Left</a>
+    <a href="#" class="btn btn-default" role="button">Middle</a>
+    <a href="#" class="btn btn-default" role="button">Right</a>
+</div>
+<div class="alert alert-success" role="alert">
+    <strong>按鈕群組<!--Well done!--></strong>水平分布按鈕群組使用type="button",某些瀏覽器會失效<!--You successfully read this important alert message.-->
+</div>
+<!--水平分布按鈕群組使用type="button"-->
+<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default">Left</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default">Middle</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+</div>
+
+<div class="alert alert-success" role="alert">
+    <strong>按鈕群組<!--Well done!--></strong>巢狀按鈕群組<!--You successfully read this important alert message.-->
+</div>
+<!--巢狀按鈕群組-->
+<div class="btn-group" role="group" aria-label="...">
+    <button type="button" class="btn btn-default">1</button>
+    <button type="button" class="btn btn-default">2</button>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Dropdown link</a></li>
+            <li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="alert alert-success" role="alert">
+    <strong>按鈕群組<!--Well done!--></strong>垂直分布按鈕群組<!--You successfully read this important alert message.-->
+</div>
+<!--垂直分布按鈕群組-->
+<div class="btn-group-vertical" role="group" aria-label="...">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+</div>
+
+<div class="alert alert-success" role="alert">
+    <strong>分割按鈕<!--Well done!--></strong>下拉選單<!--You successfully read this important alert message.-->
+</div>
+<!--分割按鈕下拉選單-->
+<div class="btn-group">
+    <button type="button" class="btn btn-danger">Action</button>
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+</div>
+
+
+<div class="alert alert-success" role="alert">
+    <strong>分割按鈕<!--Well done!--></strong>分割按鈕向上彈出下拉選單<!--You successfully read this important alert message.-->
+</div>
+<!--分割按鈕向上彈出下拉選單-->
+<br />
+<div class="btn-group dropup">
+    <button type="button" class="btn btn-default">Dropup</button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+</div>
+
+<div class="alert alert-success" role="alert">
+    <strong>input 群組<!--Well done!--></strong>在.input-group下加入 .input-group-addon 類別，可以讓 .form-control 的前面或後面額外加入其他元素。<!--You successfully read this important alert message.-->
+</div>
+<!--input 群組-->
+<div class="input-group">
+    <span class="input-group-addon">@@</span>
+    <input type="text" class="form-control" placeholder="Username">
+</div>
+
+<div class="input-group">
+    <input type="text" class="form-control">
+    <span class="input-group-addon">.00</span>
+</div>
+
+<div class="input-group">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control">
+    <span class="input-group-addon">.00</span>
+</div>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>input 群組<!--Well done!--></strong>放置 checkbox 或 radio 選項到 input 群組，以替代文字。<!--You successfully read this important alert message.-->
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox">
+            </span>
+            <input type="text" class="form-control" placeholder="文字輸入框">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="radio">
+            </span>
+            <input type="text" class="form-control" placeholder="文字輸入框">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>input 群組<!--Well done!--></strong>附加按鈕元素，使用 .input-group-btn(一般按鈕)<!--You successfully read this important alert message.-->
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+            </span>
+            <input type="text" class="form-control">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+            </span>
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>input 群組<!--Well done!--></strong>附加按鈕元素，使用 .input-group-btn(帶有單一按鈕下拉選單)<!--You successfully read this important alert message.-->
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div><!-- /btn-group -->
+            <input type="text" class="form-control">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div><!-- /btn-group -->
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>input 群組<!--Well done!--></strong>附加按鈕元素，使用 .input-group-btn(帶有分割按鈕下拉選單)<!--You successfully read this important alert message.-->
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽<!--Well done!--></strong>巡覽都是基於 .nav 類別，使用頁籤則在"ul"元素中加入.nav-tabs 類別並依賴於 .nav 基礎類別。<!--You successfully read this important alert message.-->
+</div>
+<div role="tabpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+</div>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽<!--Well done!--></strong>藥片樣式，使用 .nav-pills即可<!--You successfully read this important alert message.-->
+</div>
+<div role="tabpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+</div>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽<!--Well done!--></strong>垂直布局，再加入 .nav-stacked即可<!--You successfully read this important alert message.-->
+</div>
+<div role="tabpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills nav-stacked" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+</div>
+
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽<!--Well done!--></strong>等寬樣式，加入 .nav-justified(另外說明)<!--You successfully read this important alert message.-->
+</div>
+<div role="tabpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+</div>
+<div role="tabpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills nav-justified" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+</div>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽<!--Well done!--></strong>禁用連結，使用disabled，但此類別僅呈現灰色連結和無移入（hover）效果，僅僅改變a tag的外觀，並不影響它的功能。可以撰寫 JavaScript 以禁用這裡的連結。<!--You successfully read this important alert message.-->
+</div>
+<div role="tabpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation" class="disabled"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+</div>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽<!--Well done!--></strong>帶有下拉選單的頁籤<!--You successfully read this important alert message.-->
+</div>
+<div role="tabpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽列<!--Well done!--></strong>提供"nav"tag基礎元件，它們在行動設備的可視區域是以折疊呈現（可切換開關），依賴 JavaScript 外掛。<!--You successfully read this important alert message.-->
+</div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽列<!--Well done!--></strong>在a tag中加入.navbar-brand，並把文字替換為img tag<!--You successfully read this important alert message.-->
+</div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" height="20" src="https://www.google.com.tw/logos/doodles/2017/holi-festival-2017-5750729821126656-hp.gif">
+            </a>
+        </div>
+    </div>
+</nav>
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽列<!--Well done!--></strong>將表單內容放置在 .navbar-form 類別之內。提醒，.navbar-form 與經過 Less mixin 的 .form-inline 共享許多它的程式碼。一些 form 控制項，例如，input 群組，可能需要固定寬度以正確地在巡覽列上呈現。
+    <!--You successfully read this important alert message.-->
+</div>
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>巡覽列<!--Well done!--></strong>
+    <br />按鈕：加入 .navbar-btn 類別以在巡覽列裡垂直置中怖局。
+    <br />文字：把文字包裝在 .navbar-text 類別之中時，通常會使用 p　tag以取得正確的行距與顏色。
+    <br />非巡覽連結：使用 .navbar-link 類別能讓連結有合適的顏色和反向顏色巡覽列選項
+    <br />元件對齊：使用 .navbar-left 或 .navbar-right 工具類別能讓巡覽列的連結、表單、按鈕、文字進行對齊
+    <br />固定至頂端：加入 .navbar-fixed-top 類別可以讓巡覽列固定至頂端（body 需設置 padding）
+    <br />固定至底端：加入 .navbar-fixed-bottom 類別可以讓巡覽列固定至底端（body 需設置 padding）
+    <br />頂端靜止：加入 .navbar-static-top 類別可以建立一個 100% 寬度的巡覽列，它會隨著頁面向下滑動而消失。
+    <br />反向顏色：加入 .navbar-inverse 類別以修改巡覽列的外觀。
+    <!--You successfully read this important alert message.-->
+</div>
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>麵包屑巡覽<!--Well done!--></strong>使用breadcrumb類別，層次結構中的分隔符號（/）會自動透過 CSS :before 和 content 屬性加入。<!--You successfully read this important alert message.-->
+</div>
+<ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>分頁巡覽<!--Well done!--></strong>預設分頁，使用pagination類別。<!--You successfully read this important alert message.-->
+</div>
+<nav>
+    <ul class="pagination">
+        <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+    </ul>
+</nav>
+
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>分頁巡覽<!--Well done!--></strong>換頁，使用pager類別。<!--You successfully read this important alert message.-->
+</div>
+<nav>
+    <ul class="pager">
+        <li><a href="#">Previous</a></li>
+        <li><a href="#">Next</a></li>
+    </ul>
+</nav>
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>分頁巡覽<!--Well done!--></strong>對齊連結，在li加上class="previous"與li class="next"。<!--You successfully read this important alert message.-->
+</div>
+<nav>
+    <ul class="pager">
+        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+</nav>
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>標籤<!--Well done!--></strong>使用label label-default類別。<!--You successfully read this important alert message.-->
+</div>
+<h3>Example heading <span class="label label-default">New</span></h3>
+<br />
+<div class="alert alert-success" role="alert">
+    <strong>標籤變化<!--Well done!--></strong>label-預設顏色。<!--You successfully read this important alert message.-->
+</div>
+<h3>
+    Example heading <span class="label label-default">Default</span>
+</h3>
+<h3>
+    Example heading <span class="label label-primary">Primary</span>
+</h3>
+<h3>
+    Example heading <span class="label label-success">Success</span>
+</h3>
+<h3>
+    Example heading <span class="label label-info">Info</span>
+</h3>
+<h3>
+    Example heading <span class="label label-warning">Warning</span>
+</h3>
+<h3>Example heading <span class="label label-danger">Danger</span></h3>
+
