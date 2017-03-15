@@ -10,11 +10,11 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="Content" Type="varchar" MaxLength="500" Nullable="false" />
-          <Property Name="CreateUser" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Content" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="CreateUser" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="CreateDateTime" Type="datetime" Nullable="false" />
-          <Property Name="EditUser" Type="varchar" MaxLength="10" />
+          <Property Name="EditUser" Type="nvarchar" MaxLength="10" />
           <Property Name="EditDateTime" Type="datetime" />
         </EntityType>
         <EntityContainer Name="DemoModelStoreContainer">
@@ -30,11 +30,11 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Guid" Nullable="false" />
-          <Property Name="Title" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Content" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CreateUser" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreateUser" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="CreateDateTime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="EditUser" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="EditUser" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="EditDateTime" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityContainer Name="DemoEntities" annotation:LazyLoadingEnabled="true">

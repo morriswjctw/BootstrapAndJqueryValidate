@@ -30,6 +30,7 @@ namespace BootstrapJqueryValidate.Controllers
             {
                 demoVMs.GetList.Add( new DemoModel
                 {
+                    RecId = item.Id.ToString(),
                     Title = item.Title,
                     Content = item.Content,
                     CreateUser = item.CreateUser,
@@ -40,6 +41,30 @@ namespace BootstrapJqueryValidate.Controllers
             }
 
             return PartialView(demoVMs);
+        }
+
+        [HttpPost]
+        public JsonResult Add(DemoModel data)
+        {
+            try
+            {
+                db.Demo.Add(new Demo
+                {
+                    Id = Guid.NewGuid(),
+                    Title = data.Title,
+                    Content = data.Content,
+                    CreateUser = data.CreateUser,
+                    CreateDateTime = DateTime.Now,
+                    EditUser = data.CreateUser
+                });
+
+                db.SaveChanges();
+                return Json("");
+            }
+            catch(Exception ex)
+            {
+                return Json("fail");
+            }
         }
     }
 }

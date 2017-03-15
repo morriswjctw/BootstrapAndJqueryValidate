@@ -1,6 +1,5 @@
-﻿<div id="DemoAdd">
-
-    @using (Html.BeginForm("Edit", "Demo", FormMethod.Post, new { id = "demoForm", role = "form" }))
+﻿<div id="addForm">
+    @using (Html.BeginForm("Add", "Demo", FormMethod.Post, new { id = "demoForm", role = "form" }))
     {
         <div class="form-group">
             <label>標題</label>
@@ -11,20 +10,19 @@
             <input type="text" class="form-control validate-require" id="content" name="content" placeholder="輸入內容">
         </div>
         <div class="form-group">
-            <label>標題</label>
-            <input type="text" class="form-control validate-require" id="user" name="user" placeholder="發表人">
+            <label>發表人</label>
+            <input type="text" class="form-control validate-require" id="CreateUser" name="CreateUser" placeholder="發表人">
         </div>
         <div class="checkbox">
             <label>
-                <input type="checkbox" id="addShowMessage"> 是否顯示訊息
+                <input type="checkbox" name="showMessage" checked> 是否顯示訊息
             </label>
         </div>
-    <button class="btn btn-default submit" data-toggle="tooltip" data-placement="top" title="請確認已填妥再送出">送出</button>
+        <button class="btn btn-default submit" data-toggle="tooltip" data-placement="top" title="請確認已填妥再送出">送出</button>
     }
 
     <div class="alert alert-warning" style="display:none;">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <strong></strong>
     </div>
-
-    </div>
+</div>

@@ -13,6 +13,10 @@ namespace BootstrapJqueryValidate.Models
     public class DemoModel
     {
         /// <summary>
+        /// Id
+        /// </summary>
+        public string RecId { get; set; }
+        /// <summary>
         /// 標題
         /// </summary>
         public string Title { get; set; }
